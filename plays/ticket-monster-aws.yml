@@ -26,7 +26,7 @@
     - name: Launch DB instance
       local_action:
         module: ec2
-        keypair: "{{ keypair }}"
+        key_name: "{{ keypair }}"
         instance_type: "{{ type | default('t2.micro') }}"
         vpc_subnet_id: "subnet-{{ vpc_subnet | default('06866f6f') }}"
         image: "{{ ami }}"
@@ -40,7 +40,7 @@
     - name: Launch App instances
       local_action:
         module: ec2
-        keypair: "{{ keypair }}"
+        key_name: "{{ keypair }}"
         instance_type: "{{ type | default('t2.micro') }}"
         vpc_subnet_id: "subnet-{{ vpc_subnet | default('06866f6f') }}"
         image: "{{ ami }}"
