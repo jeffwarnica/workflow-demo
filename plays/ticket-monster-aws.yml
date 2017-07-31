@@ -7,7 +7,7 @@
   vars:
     region:   ca-central-1
     ami:      ami-9062d0f4
-    keypair:  "{{ ec2_keypair_name | default("JW CSB") }}"
+    keypair:  "{{ ec2_keypair_name | default('JW_CSB') }}"
     set_dns:  False
     count:    2
     tags_db:
