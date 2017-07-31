@@ -20,6 +20,7 @@
     provider_id: "{{ provider_id }}"
     max_retries: 9 
     retry_interval: 20
+    vpc_subnet: 8c21b8e5
 
   tasks:
     - name: Launch DB instance
