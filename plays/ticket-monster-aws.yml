@@ -20,7 +20,7 @@
     provider_id: "{{ provider_id }}"
     max_retries: 9 
     retry_interval: 20
-    vpc_subnet: 8c21b8e5
+    vpc_subnet: cfdb32a6
 
   tasks:
     - name: Launch DB instance
