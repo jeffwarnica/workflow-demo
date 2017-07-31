@@ -6,7 +6,7 @@
 
   vars:
     region:   ca-central-1
-    ami:       
+    ami:      ami-9062d0f4
     keypair:  "{{ ec2_keypair_name | default('aws-jmarc') }}"
     set_dns:  False
     count:    2
